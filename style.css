@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 320px;
+    height: 480px;
+    background-color: #000000;
+    position: relative;
+}
+
+.title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 35px;
+    color: #FFFFFF;
+    padding: 12px 0 0 15px;
+    font-family: main;
+}
+.red{
+    color: #F40009;
+}
+.images{
+    position: relative;
+    padding: 0 6px;
+}
+.images__item1{
+    position: absolute;
+    top: 95px;
+    animation: anim1 3s infinite;
+}
+.images__item2{
+    position: absolute;
+    top: 280px;
+    left: 10px;
+}
+.eyes{
+    animation: anim3 3s infinite;
+}
+.images__item3{
+    position: absolute;
+    left: 230px;
+    top: 80px;
+    animation: anim2 3s infinite;
+}
+.images__item4{
+    position: absolute;
+    top: 205px;
+    left: 235px; 
+    animation: anim2 3s infinite;
+}
+.images__item5{
+    position: absolute;
+    top: 80px;
+    left: 83px;
+    cursor: pointer;
+}
+.banka{
+    width: 141.3px;
+    height: 256px;
+}
+.images__item6{
+    position: absolute;
+    top: 155px;
+    left: 122px;
+    cursor: pointer;
+}
+.images__item7{
+    position: absolute;
+    top: 105px;
+    left: 77px;
+    background-image: url("img/lines.svg");
+    width: 154px;
+    height: 177px;
+    animation: opacity 3s infinite;
+    cursor: pointer;
+}
+.images__item8{
+    position: absolute;
+    top: 190px;
+    left: -2px;
+    transform: translateX(-100%);
+}
+.massagemove{
+    transform: translateX(0);
+    transition-duration: 1s;
+}
+@font-face {
+    font-family: main;
+    src: url("fonts/TCCC-UnityHeadline\ Bold.ttf");
+}
+
+@keyframes anim1 {
+    0%, 100%{
+        transform: translate(0) rotate(0);
+    }
+    50%{
+        transform: translate(-5px, 20px) rotate(-25deg);
+    }
+}
+
+@keyframes anim2 {
+    0%,100%{
+        transform: translate(0);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+}
+@keyframes anim3 {
+    0%, 100%{
+        transform: translate(0) scale(1);
+    }
+    50%{
+        transform: translate(-10px, 20px) scale(0.8);
+
+    }
+}
+@keyframes question {
+    0%, 100%{
+        transform: scale(0.6);
+    }
+    50%{
+       transform: scale(1);
+    }
+}
+@keyframes opacity{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.question{
+    animation: question 3s infinite;
+}
+.colZ{
+    position: absolute;
+    top: 80px;
+    left: 83px;
+    cursor: pointer;
+    transform: scale(0);
+}
+
+.dnone{
+    display: none !important;
+}
+
+.subtitle{
+    font-family: 'main';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding:  0 0 7px 15px;
+    opacity: 0;
+}
+.hashtag{
+    font-family: 'main';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.055em;
+    color: #F40009;
+    padding:  0 0 7px 15px;
+    opacity: 0;
+    }
+    .opacityOn{
+        opacity: 1;
+        transition-duration: 1s;
+    }
+.wrapImg{
+    position: fixed;
+    top:90px;
+}
+@keyframes offQuestion {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.offquestionanim{
+    animation: offQuestion 1s linear forwards;
+}
+.opacity0{
+    opacity: 0;
+    
+}
+.opacity1{
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.onBank{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.footer{
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
